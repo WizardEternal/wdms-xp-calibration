@@ -1,0 +1,93 @@
+# ============================================================================
+# This repo commits the audit code (src/, scripts/, tests/), the digested result
+# records under outputs/, and the result figures. Heavy/regenerable data, internal working notes, scratch run output, and
+# superseded scripts stay out.
+# ============================================================================
+
+# --- internal working folders (kept locally, not committed) ---
+00-build-plan/
+01-target-catalogs/
+02-methods-sbi-calibration/
+03-domain-refs/
+05-note/
+docs/
+configs/
+
+# --- heavy / regenerable data (Li catalog on Zenodo, pulled XP spectra, grids) ---
+data/
+
+# --- internal working notes ---
+RESULTS.md
+PROGRESS.md
+
+# --- superseded / scratch scripts (kept locally, not part of the public code) ---
+scripts/run_p0_gonogo.py
+scripts/run_catalog_audit.py
+scripts/probe_groundtruth.py
+scripts/build_groundtruth_enlarged.py
+scripts/expand_groundtruth.py
+scripts/run_precise_standalone.py
+scripts/run_precise_all.sh
+
+# --- unimplemented domain-layer stubs (the package ships only audit.py) ---
+src/sbiwdms/classifier.py
+src/sbiwdms/misspec.py
+src/sbiwdms/models.py
+src/sbiwdms/priors.py
+src/sbiwdms/responses.py
+src/sbiwdms/simulate.py
+
+# --- Python / tooling junk ---
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# --- heavy ML artifacts (checkpoints, posteriors, arrays) ---
+sbi-logs/
+*.h5
+*.pt
+*.pkl
+*.ckpt
+*.npz
+
+# --- figures: commit the PNGs, not the regenerated PDFs ---
+figures/*.pdf
+
+# ----------------------------------------------------------------------------
+# Result records under outputs/: ignore everything, then re-include only the
+# digested JSON records behind the README numbers. All scratch (per-seed part
+# files, _cells, per-seed dumps, .err/.out/.log, derived CSVs, scratch .md,
+# duplicate PNGs, superseded run records) stays out.
+# ----------------------------------------------------------------------------
+outputs/**
+!outputs/
+!outputs/audit/
+!outputs/p0/
+!outputs/audit/bp_extension.json
+!outputs/audit/catalog_analysis.json
+!outputs/audit/conformal_certificate.json
+!outputs/audit/conformal_fdr.json
+!outputs/audit/groundtruth.json
+!outputs/audit/groundtruth_followup.json
+!outputs/p0/gonogo.json
+!outputs/p0/sweep.json
+!outputs/p0/snr_sweep.json
+!outputs/p0/g1_realistic.json
+!outputs/p0/g1_realistic_snr.json
+!outputs/p0/g1_realistic_sweep.json
+!outputs/p0/g1_precise_bootstrap.json
+!outputs/p0/g1_precise_compare.json
+!outputs/p0/g1_precise_snr.json
+!outputs/p0/evidence_gate.json
+!outputs/p0/evidence_gate_sev002.json
+!outputs/p0/evidence_gate_sev005.json
+!outputs/p0/npe_sbc.json
+!outputs/p0/npe_sbc_robust.json
+!outputs/p0/npe_sbc_realmodel.json
+!outputs/p0/ppc_diagnostic.json
+!outputs/p0/realmodel_fidelity.json

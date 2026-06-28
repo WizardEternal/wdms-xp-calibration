@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "maxlib": 120,
+    "severity": 0.02,
+    "n": 300,
+    "seed": 0
+  },
+  "rows": [
+    {
+      "snr": 10.0,
+      "spurious_rate": 0.727,
+      "baseline_fpr_clean": 0.05,
+      "redchi2_binary_genuine": 0.979,
+      "gof_AUC_genuine_vs_spurious": 0.481,
+      "auc_gate_honest": 0.855,
+      "auc_dchi2_perobj": 0.015
+    },
+    {
+      "snr": 20.0,
+      "spurious_rate": 0.99,
+      "baseline_fpr_clean": 0.05,
+      "redchi2_binary_genuine": 1.01,
+      "gof_AUC_genuine_vs_spurious": 0.51,
+      "auc_gate_honest": 0.921,
+      "auc_dchi2_perobj": 0.003
+    },
+    {
+      "snr": 30.0,
+      "spurious_rate": 1.0,
+      "baseline_fpr_clean": 0.05,
+      "redchi2_binary_genuine": 1.057,
+      "gof_AUC_genuine_vs_spurious": 0.54,
+      "auc_gate_honest": 0.952,
+      "auc_dchi2_perobj": 0.002
+    },
+    {
+      "snr": 50.0,
+      "spurious_rate": 1.0,
+      "baseline_fpr_clean": 0.05,
+      "redchi2_binary_genuine": 1.252,
+      "gof_AUC_genuine_vs_spurious": 0.597,
+      "auc_gate_honest": 0.972,
+      "auc_dchi2_perobj": 0.001
+    },
+    {
+      "snr": 100.0,
+      "spurious_rate": 1.0,
+      "baseline_fpr_clean": 0.05,
+      "redchi2_binary_genuine": 2.09,
+      "gof_AUC_genuine_vs_spurious": 0.659,
+      "auc_gate_honest": 0.983,
+      "auc_dchi2_perobj": 0.003
+    }
+  ]
+}

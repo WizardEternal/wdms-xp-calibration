@@ -1,0 +1,47 @@
+{
+  "n_rows": 30131,
+  "flag_true_counts": {
+    "flag_MSMS": 7621,
+    "flag_binary_fit": 2418,
+    "flag_single_fit": 1812,
+    "flag_binary_mag_diff": 26145,
+    "flag_wdmsfit_in": 23257
+  },
+  "flag_true_frac": {
+    "flag_MSMS": 0.2529,
+    "flag_binary_fit": 0.0802,
+    "flag_single_fit": 0.0601,
+    "flag_binary_mag_diff": 0.8677,
+    "flag_wdmsfit_in": 0.7719
+  },
+  "prob_binary": {
+    "min": 0.8,
+    "median": 0.8983,
+    "mean": 0.8994,
+    "max": 0.9999,
+    "n_gt_0.9": 14830,
+    "n_gt_0.95": 7915,
+    "median_MSMS_flagged": 0.9103,
+    "median_not_flagged": 0.8943
+  },
+  "binary_fit_quality": {
+    "chi2_binary_reduced_median": 1.02,
+    "frac_redchi2_gt_1": 0.519,
+    "frac_redchi2_gt_2": 0.0387,
+    "frac_redchi2_gt_5": 0.0
+  },
+  "chi2_diff_renorm": {
+    "median": -0.0182,
+    "frac_lt_0_single_better": 0.5606,
+    "min": -0.9998
+  },
+  "q_binary_MSMS": {
+    "n": 7621,
+    "median": 0.743
+  },
+  "interpretation_CHECK": [
+    "25%-level flag_MSMS => a quarter of the WD-MS catalog is internally flagged as probable MS-MS contamination [CHECK meaning of flag_MSMS=1 vs Table 2].",
+    "frac chi2_diff_renorm<0 = systems where the SINGLE fit is better yet still GPC-selected as binary [CHECK: QC cut required chi2_diff_renorm>-1].",
+    "All prob_binary>0.8 => shipped file is POST-cut; literal 0.8-replacement needs the pre-cut pool Li do not ship (audit purity within the 30k instead)."
+  ]
+}

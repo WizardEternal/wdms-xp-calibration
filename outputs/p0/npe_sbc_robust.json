@@ -1,0 +1,211 @@
+{
+  "runs": [
+    {
+      "config": {
+        "seed": 0,
+        "n_train": 8000,
+        "snr": 30.0,
+        "params": [
+          "T_ms",
+          "log_a_ms",
+          "T_wd",
+          "log_a_wd"
+        ]
+      },
+      "SBC_clean": {
+        "ks_pvals": [
+          0.0391,
+          0.3771,
+          0.8842,
+          0.1375
+        ],
+        "ks_min": 0.03911,
+        "coverage90_per_param": [
+          0.9,
+          0.933,
+          0.92,
+          0.9
+        ],
+        "mean_coverage90": 0.913
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.0,
+          0.3771,
+          0.2773,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.613,
+          0.913,
+          0.867,
+          0.3
+        ],
+        "mean_coverage90": 0.673
+      }
+    },
+    {
+      "config": {
+        "seed": 1,
+        "n_train": 8000,
+        "snr": 30.0,
+        "params": [
+          "T_ms",
+          "log_a_ms",
+          "T_wd",
+          "log_a_wd"
+        ]
+      },
+      "SBC_clean": {
+        "ks_pvals": [
+          0.1375,
+          0.198,
+          0.3771,
+          0.6306
+        ],
+        "ks_min": 0.13751,
+        "coverage90_per_param": [
+          0.82,
+          0.893,
+          0.913,
+          0.867
+        ],
+        "mean_coverage90": 0.873
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.0,
+          0.0611,
+          0.3771,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.68,
+          0.847,
+          0.86,
+          0.167
+        ],
+        "mean_coverage90": 0.638
+      }
+    },
+    {
+      "config": {
+        "seed": 2,
+        "n_train": 8000,
+        "snr": 30.0,
+        "params": [
+          "T_ms",
+          "log_a_ms",
+          "T_wd",
+          "log_a_wd"
+        ]
+      },
+      "SBC_clean": {
+        "ks_pvals": [
+          0.2773,
+          0.7665,
+          0.198,
+          0.4966
+        ],
+        "ks_min": 0.19801,
+        "coverage90_per_param": [
+          0.9,
+          0.94,
+          0.907,
+          0.907
+        ],
+        "mean_coverage90": 0.913
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.0,
+          0.7665,
+          0.0611,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.7,
+          0.907,
+          0.767,
+          0.34
+        ],
+        "mean_coverage90": 0.678
+      }
+    },
+    {
+      "config": {
+        "seed": 0,
+        "n_train": 30000,
+        "snr": 30.0,
+        "params": [
+          "T_ms",
+          "log_a_ms",
+          "T_wd",
+          "log_a_wd"
+        ]
+      },
+      "SBC_clean": {
+        "ks_pvals": [
+          0.0015,
+          0.0611,
+          0.198,
+          0.0611
+        ],
+        "ks_min": 0.00152,
+        "coverage90_per_param": [
+          0.84,
+          0.867,
+          0.853,
+          0.893
+        ],
+        "mean_coverage90": 0.863
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.0,
+          0.0015,
+          0.0929,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.607,
+          0.873,
+          0.82,
+          0.273
+        ],
+        "mean_coverage90": 0.643
+      }
+    }
+  ],
+  "n_done": 4,
+  "n_total": 4,
+  "clean_cov90_across": [
+    0.913,
+    0.873,
+    0.913,
+    0.863
+  ],
+  "contam_cov90_across": [
+    0.673,
+    0.638,
+    0.678,
+    0.643
+  ],
+  "clean_ksmin_across": [
+    0.03911,
+    0.13751,
+    0.19801,
+    0.00152
+  ],
+  "contam_ksmin_across": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "reading": "If clean coverage rises toward 0.9 with more training (n_train=30000) while contam stays well below, the BP systematic robustly miscalibrates the amortized posterior (optical analog of the X-ray result) and the clean under-coverage was undertraining."
+}

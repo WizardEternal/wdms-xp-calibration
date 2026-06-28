@@ -1,0 +1,233 @@
+{
+  "model": "REAL-SPECTRA PCA forward model (120 MS + 120 WD Gaia XP templates)",
+  "parametrization": "theta = (msPC1,msPC2, wdPC1,wdPC2,wdPC3, log10_frac); MS=mu_ms+s.PC_ms (2PC,>99%var), WD=mu_wd+s.PC_wd (3PC,~96%var); prior box = empirical score span; x = MS + 10^logfrac * WD*(MS.sum/WD.sum) + Gaussian(SNR=30); BP systematic = severity*mean*RINJ injected at inference.",
+  "runs": [
+    {
+      "config": {
+        "seed": 0,
+        "n_train": 8000,
+        "snr": 30.0,
+        "params": [
+          "msPC1",
+          "msPC2",
+          "wdPC1",
+          "wdPC2",
+          "wdPC3",
+          "log10_frac"
+        ],
+        "K_MS": 2,
+        "K_WD": 3,
+        "frac_range": [
+          0.05,
+          0.3
+        ],
+        "n_ms_templates": 120,
+        "n_wd_templates": 120,
+        "discrete_rank_null_cov90": 0.882,
+        "n_post": 50
+      },
+      "best_validation_log_prob": null,
+      "SBC_clean": {
+        "ks_pvals": [
+          0.1375,
+          0.9622,
+          0.0244,
+          0.6306,
+          0.6306,
+          0.4966
+        ],
+        "ks_min": 0.02436,
+        "coverage90_per_param": [
+          0.873,
+          0.893,
+          0.853,
+          0.873,
+          0.907,
+          0.873
+        ],
+        "mean_coverage90": 0.879
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.0,
+          0.0,
+          0.0,
+          0.005,
+          0.0,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.793,
+          0.58,
+          0.093,
+          0.727,
+          0.407,
+          0.0
+        ],
+        "mean_coverage90": 0.433
+      }
+    },
+    {
+      "config": {
+        "seed": 1,
+        "n_train": 8000,
+        "snr": 30.0,
+        "params": [
+          "msPC1",
+          "msPC2",
+          "wdPC1",
+          "wdPC2",
+          "wdPC3",
+          "log10_frac"
+        ],
+        "K_MS": 2,
+        "K_WD": 3,
+        "frac_range": [
+          0.05,
+          0.3
+        ],
+        "n_ms_templates": 120,
+        "n_wd_templates": 120,
+        "discrete_rank_null_cov90": 0.882,
+        "n_post": 50
+      },
+      "best_validation_log_prob": null,
+      "SBC_clean": {
+        "ks_pvals": [
+          0.3771,
+          0.0611,
+          0.3771,
+          0.3771,
+          0.3771,
+          0.7665
+        ],
+        "ks_min": 0.06111,
+        "coverage90_per_param": [
+          0.88,
+          0.86,
+          0.847,
+          0.873,
+          0.867,
+          0.893
+        ],
+        "mean_coverage90": 0.87
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.0,
+          0.0,
+          0.0,
+          0.0008,
+          0.0,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.787,
+          0.6,
+          0.133,
+          0.693,
+          0.467,
+          0.0
+        ],
+        "mean_coverage90": 0.447
+      }
+    },
+    {
+      "config": {
+        "seed": 2,
+        "n_train": 8000,
+        "snr": 30.0,
+        "params": [
+          "msPC1",
+          "msPC2",
+          "wdPC1",
+          "wdPC2",
+          "wdPC3",
+          "log10_frac"
+        ],
+        "K_MS": 2,
+        "K_WD": 3,
+        "frac_range": [
+          0.05,
+          0.3
+        ],
+        "n_ms_templates": 120,
+        "n_wd_templates": 120,
+        "discrete_rank_null_cov90": 0.882,
+        "n_post": 50
+      },
+      "best_validation_log_prob": null,
+      "SBC_clean": {
+        "ks_pvals": [
+          0.0611,
+          0.6306,
+          0.0391,
+          0.4966,
+          0.0929,
+          0.3771
+        ],
+        "ks_min": 0.03911,
+        "coverage90_per_param": [
+          0.84,
+          0.86,
+          0.847,
+          0.913,
+          0.847,
+          0.927
+        ],
+        "mean_coverage90": 0.872
+      },
+      "SBC_under_BP_systematic_sev0.05": {
+        "ks_pvals": [
+          0.3771,
+          0.0,
+          0.0,
+          0.0001,
+          0.0,
+          0.0
+        ],
+        "ks_min": 0.0,
+        "coverage90_per_param": [
+          0.88,
+          0.587,
+          0.127,
+          0.693,
+          0.52,
+          0.0
+        ],
+        "mean_coverage90": 0.468
+      }
+    }
+  ],
+  "n_done": 3,
+  "n_total": 3,
+  "discrete_rank_null_cov90": 0.882,
+  "clean_cov90_across": [
+    0.879,
+    0.87,
+    0.872
+  ],
+  "contam_cov90_across": [
+    0.433,
+    0.447,
+    0.468
+  ],
+  "clean_ksmin_across": [
+    0.02436,
+    0.06111,
+    0.03911
+  ],
+  "contam_ksmin_across": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "best_vlp_across": [
+    null,
+    null,
+    null
+  ],
+  "reading": "If clean 90% coverage sits near 0.882 (rank-null) and KS is uniform, while BP-contaminated coverage collapses well below with KS->0, the BP systematic silently miscalibrates the amortized posterior ON THE REAL-SPECTRA model too (referee-proofs the optical analog of arXiv:2606.17098)."
+}

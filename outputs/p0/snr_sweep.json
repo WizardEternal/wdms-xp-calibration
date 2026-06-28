@@ -1,0 +1,52 @@
+[
+  {
+    "snr": 10,
+    "spurious_rate": 0.525,
+    "baseline_fpr": 0.05,
+    "redchi2_binary_genuine": 1.008,
+    "redchi2_binary_spurious": 0.997,
+    "gof_indistinguishable": true,
+    "auc_gate_honest": 0.851,
+    "auc_dchi2_perobj": 0.397
+  },
+  {
+    "snr": 20,
+    "spurious_rate": 0.67,
+    "baseline_fpr": 0.05,
+    "redchi2_binary_genuine": 1.009,
+    "redchi2_binary_spurious": 1.058,
+    "gof_indistinguishable": true,
+    "auc_gate_honest": 0.959,
+    "auc_dchi2_perobj": 0.298
+  },
+  {
+    "snr": 30,
+    "spurious_rate": 0.698,
+    "baseline_fpr": 0.05,
+    "redchi2_binary_genuine": 1.007,
+    "redchi2_binary_spurious": 1.122,
+    "gof_indistinguishable": true,
+    "auc_gate_honest": 0.985,
+    "auc_dchi2_perobj": 0.268
+  },
+  {
+    "snr": 50,
+    "spurious_rate": 0.662,
+    "baseline_fpr": 0.05,
+    "redchi2_binary_genuine": 1.01,
+    "redchi2_binary_spurious": 1.345,
+    "gof_indistinguishable": false,
+    "auc_gate_honest": 0.995,
+    "auc_dchi2_perobj": 0.239
+  },
+  {
+    "snr": 100,
+    "spurious_rate": 0.55,
+    "baseline_fpr": 0.05,
+    "redchi2_binary_genuine": 1.025,
+    "redchi2_binary_spurious": 2.343,
+    "gof_indistinguishable": false,
+    "auc_gate_honest": 0.998,
+    "auc_dchi2_perobj": 0.169
+  }
+]

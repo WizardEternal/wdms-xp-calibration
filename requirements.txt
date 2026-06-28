@@ -1,0 +1,15 @@
+# Top-level dependencies (>= pins from the installed env, 2026-06-28).
+# The catalog audit + BIC gate run on numpy/scipy/scikit-learn/astropy alone;
+# torch + sbi + ultranest are needed only for the NPE+SBC and nested-sampling-
+# evidence scripts. astroquery is for the SDSS/LAMOST/GALEX cross-matches.
+numpy>=2.4.6
+scipy>=1.15.3
+matplotlib>=3.10.9
+scikit-learn>=1.9.0
+astropy>=7.2.0
+astroquery>=0.4.10
+pyyaml>=6.0.3
+sbi>=0.26.1
+ultranest>=4.5.0
+torch>=2.12.0
+pytest>=9.0.3

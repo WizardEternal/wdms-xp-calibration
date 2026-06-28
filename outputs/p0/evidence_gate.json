@@ -1,0 +1,12 @@
+{
+  "config": {
+    "n_each": 8,
+    "snr": 30,
+    "severity": 0.05
+  },
+  "median_dlnZ_genuine_binary": 18.34,
+  "median_dlnZ_spurious": -4.19,
+  "AUC_evidence_gate (genuine vs spurious)": 1.0,
+  "AUC_dchi2_perobj (genuine vs spurious)": 0.078,
+  "interpretation": "Genuine binaries have dlnZ>>0 (evidence favors the true binary); BP-injected singles have dlnZ<0 (evidence favors single+systematic). The evidence gate separates them (AUC high) where per-object Delta-chi2 is anti-informative (AUC<=0.5) \u2014 proper-evidence confirmation of the BIC-gate result."
+}

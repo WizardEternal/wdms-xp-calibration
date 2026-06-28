@@ -1,0 +1,24 @@
+{
+  "config": {
+    "n_per_class": 400,
+    "snr": 100.0,
+    "severity": 0.05,
+    "binary_thr_dchi2renorm": 0.6369
+  },
+  "sanity_auc_single_vs_binary": 0.997,
+  "A_spurious_rate_injected_singles": 0.55,
+  "A_baseline_fpr_clean_singles": 0.05,
+  "B_perobject_gof": {
+    "redchi2_binary_genuine": 1.025,
+    "redchi2_binary_spurious": 2.343,
+    "indistinguishable_heuristic": false
+  },
+  "C_gate": {
+    "auc_gate_HONEST_mismatched_template": 0.998,
+    "auc_gate_ORACLE_matched_template_upperbound": 1.0,
+    "false_alarm_on_genuine_honest": 0.0,
+    "auc_dchi2_perobj_genuine_vs_spurious": 0.169,
+    "dchi2_note": "<0.5 => per-object Delta-chi2 is ANTI-informative (ranks spurious as MORE binary-like than genuine); not merely uninformative."
+  },
+  "verdict_hint": "GO if: spurious_rate >> baseline_fpr; per-object Delta-chi2 AUC <= 0.5 (blind/anti-informative); and the HONEST (mismatched-template) gate AUC is well above 0.5 (oracle is an upper bound only)."
+}

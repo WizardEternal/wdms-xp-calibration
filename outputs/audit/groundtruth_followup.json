@@ -1,0 +1,45 @@
+{
+  "n": 30131,
+  "n_confirmed": 159,
+  "flag_MSMS_selection_control": {
+    "confirmed_flag_MSMS_frac": 0.4088,
+    "matched_control_flag_MSMS_frac": 0.2891,
+    "full_catalog_flag_MSMS_frac": 0.2529,
+    "n_control": 1501,
+    "reading": "control ~0.41 => SELECTION effect; control ~0.25 => flag_MSMS truly disagrees w/ spectroscopy"
+  },
+  "galex_uv_by_group": {
+    "coverage_frac_NUV": 0.1222,
+    "confirmed_WDMS": {
+      "label": "confirmed WD-MS",
+      "n_galex": 127,
+      "median_NUV_minus_G": 1.481,
+      "FUV_detection_frac": 0.9134
+    },
+    "flag_MSMS_true": {
+      "label": "flag_MSMS=1 (suspected MS-MS)",
+      "n_galex": 1139,
+      "median_NUV_minus_G": 3.544,
+      "FUV_detection_frac": 0.5338
+    },
+    "flag_MSMS_false": {
+      "label": "flag_MSMS=0",
+      "n_galex": 2544,
+      "median_NUV_minus_G": 3.428,
+      "FUV_detection_frac": 0.4403
+    },
+    "wdfit_in_true": {
+      "label": "WD on cooling seq",
+      "n_galex": 3300,
+      "median_NUV_minus_G": 3.388,
+      "FUV_detection_frac": 0.5018
+    },
+    "wdfit_in_false": {
+      "label": "WD OFF cooling seq (suspect)",
+      "n_galex": 383,
+      "median_NUV_minus_G": 4.481,
+      "FUV_detection_frac": 0.188
+    },
+    "reading": "Real WD presence => bluer NUV-G and higher FUV-detection. If flag_MSMS=1 looks UV-similar to flag_MSMS=0, the flag is not cleanly separating WD-less systems."
+  }
+}

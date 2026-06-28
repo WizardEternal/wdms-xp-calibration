@@ -1,0 +1,14 @@
+{
+  "config": {
+    "seed": 0,
+    "n_train": 8000,
+    "n_test": 150,
+    "K": 100
+  },
+  "median_ppc_p_clean": 0.54,
+  "median_ppc_p_contaminated": 0.135,
+  "frac_contam_flagged_p<0.05": 0.353,
+  "frac_clean_flagged_p<0.05": 0.047,
+  "AUC_PPC_clean_vs_contaminated": 0.792,
+  "reading": "AUC~0.5 => PPC BLIND (truly silent, even a posterior-predictive check doesn't warn). AUC>>0.5 => a PPC CATCHES the contamination (an in-the-loop GoF check would warn)."
+}

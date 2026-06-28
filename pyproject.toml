@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sbiwdms"
+version = "0.0.1"
+description = "Calibration audit of amortized Gaia XP WD-MS candidate selection (optical sequel to sbi-xray-calibration)"
+requires-python = ">=3.12"
+dependencies = [
+    # domain layer
+    "numpy", "scipy", "astropy", "gaiaxpy", "dust_extinction",
+    # SBI + calibration (reused engine; mirror sbi-xray-calibration env)
+    "torch", "sbi", "scikit-learn", "ultranest", "arviz",
+    "matplotlib", "corner",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

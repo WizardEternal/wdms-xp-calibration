@@ -1,0 +1,57 @@
+{
+  "config": {
+    "n_train": 8000,
+    "snr": 30.0,
+    "params": [
+      "T_ms",
+      "log_a_ms",
+      "T_wd",
+      "log_a_wd"
+    ]
+  },
+  "SBC_clean": {
+    "ks_pvals": [
+      0.0148,
+      0.198,
+      0.0244,
+      0.2773
+    ],
+    "ks_min": 0.01477,
+    "c2st_ranks": [
+      0.773,
+      0.8,
+      0.783,
+      0.753
+    ],
+    "coverage90_per_param": [
+      0.88,
+      0.807,
+      0.8,
+      0.853
+    ],
+    "mean_coverage90": 0.835
+  },
+  "SBC_under_BP_systematic_sev0.05": {
+    "ks_pvals": [
+      0.0,
+      0.0611,
+      0.0028,
+      0.0
+    ],
+    "ks_min": 0.0,
+    "c2st_ranks": [
+      0.86,
+      0.773,
+      0.797,
+      0.887
+    ],
+    "coverage90_per_param": [
+      0.56,
+      0.773,
+      0.813,
+      0.28
+    ],
+    "mean_coverage90": 0.607
+  },
+  "reading": "SBC ks_min high & coverage90 ~0.9 => calibrated. If the contaminated block shows collapsed ks_pvals and coverage90 << 0.9 while the clean block is fine, the BP systematic SILENTLY MISCALIBRATES the amortized posterior (optical analog of the X-ray gain-shift result). Interpret honestly from the numbers."
+}

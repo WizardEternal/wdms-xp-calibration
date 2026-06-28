@@ -1,0 +1,79 @@
+{
+  "n": 30131,
+  "galex_covered": 3683,
+  "fuv_detected": 1728,
+  "purity_floor_fuv": {
+    "ALL_galex_covered": {
+      "label": "all GALEX-covered",
+      "n_galex": 3683,
+      "fuv_det": 1728,
+      "fuv_det_frac": 0.4692,
+      "wilson95": [
+        0.4531,
+        0.4853
+      ]
+    },
+    "prob_binary_low_third": {
+      "label": "prob<= 0.862",
+      "n_galex": 815,
+      "fuv_det": 231,
+      "fuv_det_frac": 0.2834,
+      "wilson95": [
+        0.2536,
+        0.3153
+      ]
+    },
+    "prob_binary_mid_third": {
+      "label": "mid third",
+      "n_galex": 1168,
+      "fuv_det": 493,
+      "fuv_det_frac": 0.4221,
+      "wilson95": [
+        0.3941,
+        0.4506
+      ]
+    },
+    "prob_binary_high_third": {
+      "label": "prob> 0.934",
+      "n_galex": 1700,
+      "fuv_det": 1004,
+      "fuv_det_frac": 0.5906,
+      "wilson95": [
+        0.567,
+        0.6137
+      ]
+    },
+    "wd_on_sequence": {
+      "label": "flag_wdmsfit_in=1 (on seq)",
+      "n_galex": 3300,
+      "fuv_det": 1656,
+      "fuv_det_frac": 0.5018,
+      "wilson95": [
+        0.4848,
+        0.5189
+      ]
+    },
+    "wd_off_sequence": {
+      "label": "flag_wdmsfit_in=0 (off seq)",
+      "n_galex": 383,
+      "fuv_det": 72,
+      "fuv_det_frac": 0.188,
+      "wilson95": [
+        0.152,
+        0.2301
+      ]
+    },
+    "reading": "FUV-det frac is a certified WD-present FLOOR. If it is ~flat across prob_binary terciles, Li's score does NOT rank true WD presence."
+  },
+  "conformal_selection": {
+    "q=0.1": {
+      "n_selected": 0
+    },
+    "q=0.2": {
+      "n_selected": 0
+    },
+    "q=0.3": {
+      "n_selected": 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "snr": 10,
+    "spurious_rate": 1.0,
+    "redchi2_binary_genuine": 0.991,
+    "gof_AUC_genuine_vs_spurious": 0.49,
+    "auc_gate_honest": 0.8,
+    "auc_dchi2_perobj": 0.189
+  },
+  {
+    "snr": 20,
+    "spurious_rate": 1.0,
+    "redchi2_binary_genuine": 1.038,
+    "gof_AUC_genuine_vs_spurious": 0.534,
+    "auc_gate_honest": 0.889,
+    "auc_dchi2_perobj": 0.172
+  },
+  {
+    "snr": 30,
+    "spurious_rate": 1.0,
+    "redchi2_binary_genuine": 1.122,
+    "gof_AUC_genuine_vs_spurious": 0.592,
+    "auc_gate_honest": 0.922,
+    "auc_dchi2_perobj": 0.163
+  },
+  {
+    "snr": 50,
+    "spurious_rate": 1.0,
+    "redchi2_binary_genuine": 1.379,
+    "gof_AUC_genuine_vs_spurious": 0.713,
+    "auc_gate_honest": 0.947,
+    "auc_dchi2_perobj": 0.145
+  }
+]

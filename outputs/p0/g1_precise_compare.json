@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "config": "severity=0.02, snr=30, n=300, seed=0"
+  },
+  "maxlib_50": {
+    "spurious_rate": 0.98,
+    "baseline_fpr_clean": 0.05,
+    "gof_AUC_genuine_vs_spurious": 0.522,
+    "auc_gate_honest": 0.93,
+    "auc_gate_oracle": 0.932,
+    "auc_dchi2_perobj": 0.002,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.144,
+    "n_ms_used": 50,
+    "n_wd_used": 50
+  },
+  "maxlib_120": {
+    "spurious_rate": 1.0,
+    "baseline_fpr_clean": 0.05,
+    "gof_AUC_genuine_vs_spurious": 0.54,
+    "auc_gate_honest": 0.952,
+    "auc_gate_oracle": 0.959,
+    "auc_dchi2_perobj": 0.002,
+    "redchi2_binary_genuine": 1.057,
+    "redchi2_binary_spurious": 1.078,
+    "n_ms_used": 120,
+    "n_wd_used": 120
+  },
+  "delta_spurious_rate_120_minus_50": 0.02
+}

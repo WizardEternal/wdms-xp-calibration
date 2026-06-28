@@ -1,0 +1,86 @@
+[
+  {
+    "severity": 0.005,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 0.23,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.106,
+    "gof_AUC_genuine_vs_spurious": 0.466,
+    "auc_gate_honest": 0.928,
+    "auc_gate_oracle": 0.926,
+    "auc_dchi2_perobj": 0.0
+  },
+  {
+    "severity": 0.01,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 0.553,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.138,
+    "gof_AUC_genuine_vs_spurious": 0.493,
+    "auc_gate_honest": 0.935,
+    "auc_gate_oracle": 0.933,
+    "auc_dchi2_perobj": 0.0
+  },
+  {
+    "severity": 0.015,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 0.853,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.135,
+    "gof_AUC_genuine_vs_spurious": 0.509,
+    "auc_gate_honest": 0.934,
+    "auc_gate_oracle": 0.933,
+    "auc_dchi2_perobj": 0.0
+  },
+  {
+    "severity": 0.02,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 0.98,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.144,
+    "gof_AUC_genuine_vs_spurious": 0.522,
+    "auc_gate_honest": 0.93,
+    "auc_gate_oracle": 0.932,
+    "auc_dchi2_perobj": 0.002
+  },
+  {
+    "severity": 0.05,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 1.0,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.203,
+    "gof_AUC_genuine_vs_spurious": 0.592,
+    "auc_gate_honest": 0.922,
+    "auc_gate_oracle": 0.944,
+    "auc_dchi2_perobj": 0.163
+  },
+  {
+    "severity": 0.1,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 1.0,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 1.563,
+    "gof_AUC_genuine_vs_spurious": 0.864,
+    "auc_gate_honest": 0.965,
+    "auc_gate_oracle": 0.994,
+    "auc_dchi2_perobj": 0.477
+  },
+  {
+    "severity": 0.2,
+    "template_blue_residual": 0.0016,
+    "spurious_rate": 1.0,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.122,
+    "redchi2_binary_spurious": 2.941,
+    "gof_AUC_genuine_vs_spurious": 0.999,
+    "auc_gate_honest": 0.997,
+    "auc_gate_oracle": 1.0,
+    "auc_dchi2_perobj": 0.827
+  }
+]

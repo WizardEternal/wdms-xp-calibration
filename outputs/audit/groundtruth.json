@@ -1,0 +1,61 @@
+{
+  "n_catalog": 30131,
+  "spectroscopic_confirmations": {
+    "RM2016": 20,
+    "Ren2018": 201,
+    "unique_in_30k": 159
+  },
+  "compare_confirmed_vs_full": {
+    "FULL_catalog": {
+      "label": "full 30k",
+      "n": 30131,
+      "flag_MSMS_frac": 0.2529,
+      "flag_wdmsfit_in_frac": 0.7719,
+      "prob_binary_median": 0.8983,
+      "chi2_diff_renorm_median": -0.0182,
+      "chi2_diff_renorm_frac_lt0": 0.5606
+    },
+    "CONFIRMED_WDMS": {
+      "label": "spectroscopically-confirmed WD-MS",
+      "n": 159,
+      "flag_MSMS_frac": 0.4088,
+      "flag_wdmsfit_in_frac": 1.0,
+      "prob_binary_median": 0.9425,
+      "chi2_diff_renorm_median": 0.7199,
+      "chi2_diff_renorm_frac_lt0": 0.1069
+    },
+    "NOT_confirmed": {
+      "label": "rest",
+      "n": 29972,
+      "flag_MSMS_frac": 0.2521,
+      "flag_wdmsfit_in_frac": 0.7707,
+      "prob_binary_median": 0.898,
+      "chi2_diff_renorm_median": -0.0192,
+      "chi2_diff_renorm_frac_lt0": 0.563
+    }
+  },
+  "key_question": "If flag_MSMS truly marks contaminants, the spectroscopically-CONFIRMED WD-MS should have a LOWER flag_MSMS fraction than the full catalog's 25.3%. Compare above.",
+  "galex": {
+    "matched_rows": 3703,
+    "unique_sources_with_galex": 3683,
+    "coverage_frac": 0.1222,
+    "nuv_col": "NUVmag",
+    "cols_sample": [
+      "angDist",
+      "myid",
+      "ra",
+      "dec",
+      "RAJ2000",
+      "DEJ2000",
+      "name",
+      "objid",
+      "phID",
+      "Cat",
+      "RAfdeg",
+      "DEfdeg",
+      "FUVexp",
+      "NUVexp",
+      "GLON"
+    ]
+  }
+}

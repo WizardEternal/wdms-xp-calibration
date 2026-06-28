@@ -1,0 +1,15 @@
+{
+  "n_catalog": 30131,
+  "n_with_bp": 30131,
+  "li_stated_cut": "phot_bp_mean_mag < 18 (Li et al. 2025, Sec. 2.2, for the Riello systematic)",
+  "bp_median": 17.469,
+  "bp_p95": 18.548,
+  "bp_p99": 18.814,
+  "bp_max": 19.514,
+  "n_bp_gt_18": 7380,
+  "frac_bp_gt_18": 0.2449,
+  "n_bp_gt_18p5": 1885,
+  "frac_bp_gt_18p5": 0.0626,
+  "a_g_max": 0.5,
+  "note": "Released FaintQC catalog extends past the stated B<18 cut: a quarter of candidates sit at B>18 (to B~19.5), the regime where the Riello BP systematic is non-negligible. CSV is byte-identical (MD5 66cb2ae49124096e63876e46bf74bfdb) to Zenodo 10.5281/zenodo.14411002."
+}

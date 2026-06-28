@@ -1,0 +1,43 @@
+{
+  "status": "OK",
+  "data_dir": "data/real_spectra_large",
+  "n_ms_templates_used": 120,
+  "n_wd_templates_used": 120,
+  "n_ms_available": 120,
+  "n_wd_available": 120,
+  "maxlib": 120,
+  "dropped": {
+    "ms": 0,
+    "wd": 0
+  },
+  "config": {
+    "severity": 0.02,
+    "snr": 100,
+    "n": 300
+  },
+  "template_blue_residual_median": 0.0013,
+  "template_blue_residual_note": "median |RINJ-projection| of MS-template LOO residuals / mean flux; large => BP-excess pre-baked in templates. Compare to injected severity.",
+  "NONLOO": {
+    "sanity_auc_single_vs_binary": 1.0,
+    "spurious_rate": 1.0,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 1.024,
+    "redchi2_binary_spurious": 1.486,
+    "gof_AUC_genuine_vs_spurious": 0.925,
+    "auc_gate_honest": 1.0,
+    "auc_gate_oracle": 1.0,
+    "auc_dchi2_perobj": 0.0
+  },
+  "LOO": {
+    "sanity_auc_single_vs_binary": 1.0,
+    "spurious_rate": 1.0,
+    "baseline_fpr_clean": 0.05,
+    "redchi2_binary_genuine": 2.09,
+    "redchi2_binary_spurious": 2.548,
+    "gof_AUC_genuine_vs_spurious": 0.659,
+    "auc_gate_honest": 0.983,
+    "auc_gate_oracle": 0.988,
+    "auc_dchi2_perobj": 0.003
+  },
+  "verdict_note": "Trust the LOO block. GO if (LOO) spurious_rate >> baseline_fpr, gof_AUC ~0.5 (per-object GoF blind), auc_dchi2_perobj <=0.5 (anti-informative), and auc_gate_honest well above 0.5. If LOO baseline_fpr or spurious on clean is high, the library is too sparse (confound) \u2014 report, do not claim GO."
+}
