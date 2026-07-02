@@ -11,7 +11,21 @@
     "n_off": 383,
     "n_matched_on": 383,
     "med_dist_off_pc": 433.0966531830804,
-    "med_dist_matched_on_pc": 433.1165729015452
+    "med_dist_matched_on_pc": 433.1165729015452,
+    "med_dist_on_seq_unmatched_pc": 301.73495475449045
+  },
+  "subset_counts": {
+    "n_rows_total": 30131,
+    "n_galex_nuv_detected": 3683,
+    "n_finite_parallax": 30131,
+    "n_m_nuv_analysis_sample": 3683,
+    "n_off_seq_sample": 383,
+    "n_on_seq_sample": 3300,
+    "n_matched_on": 383,
+    "definition_n_off_seq_sample": "the 383 = off-cooling-sequence sources (flag_wdmsfit_in == false) that have a GALEX AIS NUV detection within 3 arcsec AND a finite Gaia parallax (finite dist = 1000/parallax); FUV detection is the measured outcome, NOT a selection cut on this denominator.",
+    "definition_n_m_nuv_analysis_sample": "m_nuv = has_nuv & finite parallax = every source with a <=3 arcsec GALEX AIS NUV magnitude and a finite Gaia parallax, before the on/off cooling-sequence split; the on- and off-seq samples partition this set.",
+    "definition_n_on_seq_sample": "on-cooling-sequence half of m_nuv (flag_wdmsfit_in == true); full unmatched on-seq pool from which the distance-matched controls are drawn.",
+    "definition_n_matched_on": "the n_off on-seq sources selected 1:1 (greedy, no replacement) as nearest neighbours of the off-seq sources in log10(distance)."
   },
   "matching_procedure": {
     "sample": "GALEX-NUV-detected sources with finite Gaia parallax (m_nuv)",
@@ -19,8 +33,23 @@
     "distance": "dist_pc = 1000 / parallax_mas",
     "match_metric": "nearest neighbour in log10(distance)",
     "match_type": "greedy 1:1 without replacement (each on-seq source used once), off-seq sources matched in catalog order",
+    "match_caliper": "none (unconstrained nearest neighbour; no maximum log-distance separation imposed)",
+    "match_direction": "each off-seq source (n=n_off) is matched to one on-seq source; on-seq pool (n_on_seq_sample) is larger, so matching is exhaustive for the off-seq side",
+    "n_off_matched": 383,
+    "n_on_pool": 3300,
+    "n_matched_pairs": 383,
     "detection_definition": "FUV detected = finite FUVmag from a <=3 arcsec GALEX AIS match",
-    "galex_match_radius_arcsec": 3.0
+    "galex_catalog": "vizier:II/335/galex_ais",
+    "galex_match_radius_arcsec": 3.0,
+    "distance_bin_edges_pc": [
+      0,
+      250,
+      350,
+      450,
+      600,
+      3000
+    ],
+    "distance_bin_min_per_cell": 10
   },
   "distance_bins": [
     {

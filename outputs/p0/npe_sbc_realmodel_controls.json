@@ -1,0 +1,76 @@
+{
+  "config": {
+    "seed": 2,
+    "n_train": 8000,
+    "severity": 0.05,
+    "discrete_rank_null_cov90": 0.882,
+    "params": [
+      "msPC1",
+      "msPC2",
+      "wdPC1",
+      "wdPC2",
+      "wdPC3",
+      "log10_frac"
+    ]
+  },
+  "clean": {
+    "mean_coverage90": 0.872,
+    "coverage90_per_param": [
+      0.84,
+      0.86,
+      0.847,
+      0.913,
+      0.847,
+      0.927
+    ],
+    "ks_min": 0.03911
+  },
+  "bp": {
+    "mean_coverage90": 0.468,
+    "coverage90_per_param": [
+      0.88,
+      0.587,
+      0.127,
+      0.693,
+      0.52,
+      0.0
+    ],
+    "ks_min": 0.0
+  },
+  "red": {
+    "mean_coverage90": 0.329,
+    "coverage90_per_param": [
+      0.0,
+      0.727,
+      0.0,
+      0.647,
+      0.6,
+      0.0
+    ],
+    "ks_min": 0.0
+  },
+  "flat": {
+    "mean_coverage90": 0.363,
+    "coverage90_per_param": [
+      0.087,
+      0.673,
+      0.033,
+      0.713,
+      0.673,
+      0.0
+    ],
+    "ks_min": 0.0
+  },
+  "noise2x": {
+    "mean_coverage90": 0.594,
+    "coverage90_per_param": [
+      0.593,
+      0.62,
+      0.593,
+      0.66,
+      0.573,
+      0.527
+    ],
+    "ks_min": 0.0
+  }
+}

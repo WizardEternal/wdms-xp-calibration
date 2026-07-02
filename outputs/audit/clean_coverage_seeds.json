@@ -1,0 +1,48 @@
+{
+  "description": "Clean-arm mean cov90 per seed, consolidated across committed SBC artifacts and the matched-damage rerun clean arms. Null (discrete-rank) cov90 = 0.882.",
+  "null_cov90": 0.882,
+  "entries": {
+    "sbc_honest_seed0": {
+      "seed": 0,
+      "mean_cov90": 0.879,
+      "source": "sbc_honest.json clean.mean_coverage90"
+    },
+    "sbc_specificity_seed1": {
+      "seed": 1,
+      "mean_cov90": 0.87,
+      "source": "sbc_specificity_seeds.json clean per-param mean"
+    },
+    "sbc_specificity_seed2": {
+      "seed": 2,
+      "mean_cov90": 0.872,
+      "source": "sbc_specificity_seeds.json clean per-param mean"
+    },
+    "sbc_specificity_seed3": {
+      "seed": 3,
+      "mean_cov90": 0.905,
+      "source": "sbc_specificity_seeds.json clean per-param mean"
+    },
+    "adv_magmatch_multiseed_seed1": {
+      "seed": 1,
+      "mean_cov90": 0.873,
+      "source": "adv_magmatch_multiseed rerun clean arm (n_sbc=300)"
+    },
+    "adv_magmatch_multiseed_seed2": {
+      "seed": 2,
+      "mean_cov90": 0.865,
+      "source": "adv_magmatch_multiseed rerun clean arm (n_sbc=300)"
+    }
+  },
+  "clean_mean_cov90_values": [
+    0.879,
+    0.87,
+    0.872,
+    0.905,
+    0.873,
+    0.865
+  ],
+  "min": 0.865,
+  "max": 0.905,
+  "mean": 0.877,
+  "n": 6
+}

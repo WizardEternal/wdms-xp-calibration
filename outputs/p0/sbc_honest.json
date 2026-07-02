@@ -1,0 +1,100 @@
+{
+  "config": {
+    "seed": 0,
+    "n_train": 8000,
+    "discrete_rank_null_cov90": 0.882,
+    "params": [
+      "msPC1",
+      "msPC2",
+      "wdPC1",
+      "wdPC2",
+      "wdPC3",
+      "log10_frac"
+    ],
+    "note": "note injects 0.05 of TOTAL; honest is multiplicative local"
+  },
+  "clean": {
+    "mean_coverage90": 0.879,
+    "coverage90_per_param": [
+      0.873,
+      0.893,
+      0.853,
+      0.873,
+      0.907,
+      0.873
+    ],
+    "ks_min": 0.02436
+  },
+  "note_total_0.05": {
+    "mean_coverage90": 0.433,
+    "coverage90_per_param": [
+      0.793,
+      0.58,
+      0.093,
+      0.727,
+      0.407,
+      0.0
+    ],
+    "ks_min": 0.0
+  },
+  "honest_local_0.02": {
+    "mean_coverage90": 0.841,
+    "coverage90_per_param": [
+      0.833,
+      0.887,
+      0.833,
+      0.86,
+      0.84,
+      0.793
+    ],
+    "ks_min": 0.0001
+  },
+  "honest_local_0.05": {
+    "mean_coverage90": 0.818,
+    "coverage90_per_param": [
+      0.88,
+      0.893,
+      0.827,
+      0.873,
+      0.88,
+      0.553
+    ],
+    "ks_min": 0.0
+  },
+  "honest_local_0.10": {
+    "mean_coverage90": 0.695,
+    "coverage90_per_param": [
+      0.833,
+      0.82,
+      0.74,
+      0.827,
+      0.847,
+      0.1
+    ],
+    "ks_min": 0.0
+  },
+  "honest_local_0.20": {
+    "mean_coverage90": 0.578,
+    "coverage90_per_param": [
+      0.74,
+      0.707,
+      0.547,
+      0.76,
+      0.713,
+      0.0
+    ],
+    "ks_min": 0.0
+  },
+  "honest_local_0.50": {
+    "mean_coverage90": 0.284,
+    "coverage90_per_param": [
+      0.333,
+      0.173,
+      0.273,
+      0.44,
+      0.487,
+      0.0
+    ],
+    "ks_min": 0.0
+  }
+}

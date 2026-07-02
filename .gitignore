@@ -68,6 +68,7 @@ outputs/**
 !outputs/
 !outputs/audit/
 !outputs/p0/
+!outputs/PROVENANCE.md
 !outputs/audit/bp_extension.json
 !outputs/audit/catalog_analysis.json
 !outputs/audit/conformal_certificate.json
@@ -95,3 +96,8 @@ outputs/**
 !outputs/p0/ppc_diagnostic.json
 !outputs/p0/realmodel_fidelity.json
 !outputs/p0/local_axis_auc.json
+!outputs/p0/g1_honest_multiseed.json
+!outputs/p0/sbc_honest.json
+!outputs/p0/npe_sbc_realmodel_controls.json
+!outputs/audit/adv_magmatch_multiseed.json
+!outputs/audit/clean_coverage_seeds.json

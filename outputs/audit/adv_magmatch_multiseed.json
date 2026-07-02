@@ -1,0 +1,337 @@
+{
+  "description": "Seed-robustness of the matched-damage specificity control. Seed 0 = committed adv_magmatch.json; seeds 1,2 = rerun REUSING seed-0 tuned amps (bp 0.1066/red 0.0234/flat 0.0122/noise_mult 1.6709). n_train=8000 n_sbc=300 n_post=50 all seeds.",
+  "params": [
+    "msPC1",
+    "msPC2",
+    "wdPC1",
+    "wdPC2",
+    "wdPC3",
+    "log10_frac"
+  ],
+  "reused_tuned_amps": {
+    "bp": 0.1066,
+    "red": 0.0234,
+    "flat": 0.0122,
+    "noise": 1.6709
+  },
+  "per_seed": {
+    "0": {
+      "clean_per_param": [
+        0.88,
+        0.907,
+        0.873,
+        0.887,
+        0.85,
+        0.837
+      ],
+      "tuned_amps": {
+        "bp": 0.1066,
+        "red": 0.0234,
+        "flat": 0.0122,
+        "noise_mult": 1.6709
+      },
+      "matched_mean_cov": {
+        "bp": 0.679,
+        "red": 0.692,
+        "flat": 0.664,
+        "noise": 0.692
+      },
+      "bp_matched_per_param": [
+        0.81,
+        0.843,
+        0.683,
+        0.843,
+        0.863,
+        0.09
+      ],
+      "red_matched_per_param": [
+        0.22,
+        0.88,
+        0.707,
+        0.867,
+        0.847,
+        0.533
+      ],
+      "flat_matched_per_param": [
+        0.577,
+        0.81,
+        0.613,
+        0.873,
+        0.857,
+        0.273
+      ],
+      "noise_matched_per_param": [
+        0.607,
+        0.687,
+        0.69,
+        0.673,
+        0.65,
+        0.73
+      ],
+      "source": "committed adv_magmatch.json",
+      "config": {
+        "seed": 0,
+        "source": "committed adv_magmatch.json",
+        "n_train": 8000,
+        "n_sbc": 300,
+        "n_post": 50
+      }
+    },
+    "1": {
+      "config": {
+        "seed": 1,
+        "n_train": 8000,
+        "n_sbc": 300,
+        "n_post": 50,
+        "params": [
+          "msPC1",
+          "msPC2",
+          "wdPC1",
+          "wdPC2",
+          "wdPC3",
+          "log10_frac"
+        ],
+        "null_cov90": 0.882,
+        "reused_tuned_amps": {
+          "bp": 0.1066,
+          "red": 0.0234,
+          "flat": 0.0122,
+          "noise": 1.6709
+        },
+        "note": "amps NOT re-tuned; reused from seed-0 design"
+      },
+      "clean_per_param": [
+        0.85,
+        0.89,
+        0.857,
+        0.873,
+        0.88,
+        0.89
+      ],
+      "bp_matched_per_param": [
+        0.827,
+        0.867,
+        0.723,
+        0.833,
+        0.817,
+        0.067
+      ],
+      "red_matched_per_param": [
+        0.19,
+        0.897,
+        0.633,
+        0.863,
+        0.85,
+        0.46
+      ],
+      "flat_matched_per_param": [
+        0.597,
+        0.823,
+        0.593,
+        0.887,
+        0.863,
+        0.203
+      ],
+      "noise_matched_per_param": [
+        0.64,
+        0.703,
+        0.683,
+        0.737,
+        0.707,
+        0.657
+      ],
+      "matched_mean_cov": {
+        "bp": 0.689,
+        "red": 0.649,
+        "flat": 0.661,
+        "noise": 0.688
+      }
+    },
+    "2": {
+      "config": {
+        "seed": 2,
+        "n_train": 8000,
+        "n_sbc": 300,
+        "n_post": 50,
+        "params": [
+          "msPC1",
+          "msPC2",
+          "wdPC1",
+          "wdPC2",
+          "wdPC3",
+          "log10_frac"
+        ],
+        "null_cov90": 0.882,
+        "reused_tuned_amps": {
+          "bp": 0.1066,
+          "red": 0.0234,
+          "flat": 0.0122,
+          "noise": 1.6709
+        },
+        "note": "amps NOT re-tuned; reused from seed-0 design"
+      },
+      "clean_per_param": [
+        0.853,
+        0.857,
+        0.857,
+        0.9,
+        0.863,
+        0.863
+      ],
+      "bp_matched_per_param": [
+        0.837,
+        0.79,
+        0.75,
+        0.82,
+        0.833,
+        0.057
+      ],
+      "red_matched_per_param": [
+        0.13,
+        0.857,
+        0.617,
+        0.837,
+        0.86,
+        0.43
+      ],
+      "flat_matched_per_param": [
+        0.477,
+        0.837,
+        0.527,
+        0.83,
+        0.837,
+        0.173
+      ],
+      "noise_matched_per_param": [
+        0.663,
+        0.7,
+        0.663,
+        0.643,
+        0.72,
+        0.65
+      ],
+      "matched_mean_cov": {
+        "bp": 0.681,
+        "red": 0.622,
+        "flat": 0.613,
+        "noise": 0.673
+      }
+    }
+  },
+  "mean_over_seeds": {
+    "clean_per_param": [
+      0.861,
+      0.885,
+      0.862,
+      0.887,
+      0.864,
+      0.863
+    ],
+    "bp_matched_per_param": [
+      0.825,
+      0.833,
+      0.719,
+      0.832,
+      0.838,
+      0.071
+    ],
+    "red_matched_per_param": [
+      0.18,
+      0.878,
+      0.652,
+      0.856,
+      0.852,
+      0.474
+    ],
+    "flat_matched_per_param": [
+      0.55,
+      0.823,
+      0.578,
+      0.863,
+      0.852,
+      0.216
+    ],
+    "noise_matched_per_param": [
+      0.637,
+      0.697,
+      0.679,
+      0.684,
+      0.692,
+      0.679
+    ]
+  },
+  "log10_frac_by_seed": {
+    "bp": {
+      "0": 0.09,
+      "1": 0.067,
+      "2": 0.057
+    },
+    "red": {
+      "0": 0.533,
+      "1": 0.46,
+      "2": 0.43
+    },
+    "flat": {
+      "0": 0.273,
+      "1": 0.203,
+      "2": 0.173
+    },
+    "noise": {
+      "0": 0.73,
+      "1": 0.657,
+      "2": 0.65
+    },
+    "clean": {
+      "0": 0.837,
+      "1": 0.89,
+      "2": 0.863
+    }
+  },
+  "msPC1_by_seed": {
+    "bp": {
+      "0": 0.81,
+      "1": 0.827,
+      "2": 0.837
+    },
+    "red": {
+      "0": 0.22,
+      "1": 0.19,
+      "2": 0.13
+    },
+    "flat": {
+      "0": 0.577,
+      "1": 0.597,
+      "2": 0.477
+    },
+    "noise": {
+      "0": 0.607,
+      "1": 0.64,
+      "2": 0.663
+    },
+    "clean": {
+      "0": 0.88,
+      "1": 0.85,
+      "2": 0.853
+    }
+  },
+  "matched_mean_cov_by_seed": {
+    "0": {
+      "bp": 0.679,
+      "red": 0.692,
+      "flat": 0.664,
+      "noise": 0.692
+    },
+    "1": {
+      "bp": 0.689,
+      "red": 0.649,
+      "flat": 0.661,
+      "noise": 0.688
+    },
+    "2": {
+      "bp": 0.681,
+      "red": 0.622,
+      "flat": 0.613,
+      "noise": 0.673
+    }
+  }
+}
