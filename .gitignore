@@ -74,6 +74,9 @@ outputs/**
 !outputs/audit/conformal_fdr.json
 !outputs/audit/groundtruth.json
 !outputs/audit/groundtruth_followup.json
+!outputs/audit/severity_to_local.json
+!outputs/audit/catalog_fractions.json
+!outputs/audit/uv_distance_matched.json
 !outputs/p0/gonogo.json
 !outputs/p0/sweep.json
 !outputs/p0/snr_sweep.json
@@ -91,3 +94,4 @@ outputs/**
 !outputs/p0/npe_sbc_realmodel.json
 !outputs/p0/ppc_diagnostic.json
 !outputs/p0/realmodel_fidelity.json
+!outputs/p0/local_axis_auc.json

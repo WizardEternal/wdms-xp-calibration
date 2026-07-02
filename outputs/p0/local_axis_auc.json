@@ -1,0 +1,199 @@
+{
+  "description": "Section-3 local-axis AUCs from the production g1_realistic fit functions; multiplicative-local injection x*(1+a*taper01), LOO, clean-control threshold. Gate uses the positive BIC(bin,4)-BIC(sing+nuis,3) convention (genuine->low, spurious->high).",
+  "injection": "x_t = x_s*(1 + a*taper01), taper01 = cos^2 blue ramp in [0,1], 0 redward of 680nm",
+  "seeds": [
+    31,
+    32,
+    33
+  ],
+  "amps_local": [
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ],
+  "per_seed": {
+    "31": {
+      "seed": 31,
+      "config": {
+        "n": 120,
+        "snr": 30.0,
+        "maxlib": 50,
+        "n_ms": 50,
+        "n_wd": 50,
+        "thr_dchi2": 0.160253
+      },
+      "by_amp": {
+        "0.02": {
+          "spurious": 0.058,
+          "n_sel": 7,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.635,
+          "gate_auc": 0.935
+        },
+        "0.05": {
+          "spurious": 0.125,
+          "n_sel": 15,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.551,
+          "gate_auc": 0.936
+        },
+        "0.1": {
+          "spurious": 0.217,
+          "n_sel": 26,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.658,
+          "gate_auc": 0.922
+        },
+        "0.2": {
+          "spurious": 0.475,
+          "n_sel": 57,
+          "dchi2_auc": 0.001,
+          "gof_redchi2_auc": 0.82,
+          "gate_auc": 0.928
+        },
+        "0.5": {
+          "spurious": 0.967,
+          "n_sel": 116,
+          "dchi2_auc": 0.008,
+          "gof_redchi2_auc": 0.987,
+          "gate_auc": 0.931
+        }
+      }
+    },
+    "32": {
+      "seed": 32,
+      "config": {
+        "n": 120,
+        "snr": 30.0,
+        "maxlib": 50,
+        "n_ms": 50,
+        "n_wd": 50,
+        "thr_dchi2": 0.131546
+      },
+      "by_amp": {
+        "0.02": {
+          "spurious": 0.067,
+          "n_sel": 8,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.525,
+          "gate_auc": 0.964
+        },
+        "0.05": {
+          "spurious": 0.167,
+          "n_sel": 20,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.576,
+          "gate_auc": 0.958
+        },
+        "0.1": {
+          "spurious": 0.333,
+          "n_sel": 40,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.676,
+          "gate_auc": 0.953
+        },
+        "0.2": {
+          "spurious": 0.683,
+          "n_sel": 82,
+          "dchi2_auc": 0.0,
+          "gof_redchi2_auc": 0.789,
+          "gate_auc": 0.953
+        },
+        "0.5": {
+          "spurious": 0.983,
+          "n_sel": 118,
+          "dchi2_auc": 0.002,
+          "gof_redchi2_auc": 0.994,
+          "gate_auc": 0.948
+        }
+      }
+    },
+    "33": {
+      "seed": 33,
+      "config": {
+        "n": 120,
+        "snr": 30.0,
+        "maxlib": 50,
+        "n_ms": 50,
+        "n_wd": 50,
+        "thr_dchi2": 0.155534
+      },
+      "by_amp": {
+        "0.02": {
+          "spurious": 0.117,
+          "n_sel": 14,
+          "dchi2_auc": 0.005,
+          "gof_redchi2_auc": 0.568,
+          "gate_auc": 0.95
+        },
+        "0.05": {
+          "spurious": 0.158,
+          "n_sel": 19,
+          "dchi2_auc": 0.006,
+          "gof_redchi2_auc": 0.623,
+          "gate_auc": 0.945
+        },
+        "0.1": {
+          "spurious": 0.383,
+          "n_sel": 46,
+          "dchi2_auc": 0.005,
+          "gof_redchi2_auc": 0.679,
+          "gate_auc": 0.951
+        },
+        "0.2": {
+          "spurious": 0.717,
+          "n_sel": 86,
+          "dchi2_auc": 0.007,
+          "gof_redchi2_auc": 0.822,
+          "gate_auc": 0.955
+        },
+        "0.5": {
+          "spurious": 0.992,
+          "n_sel": 119,
+          "dchi2_auc": 0.024,
+          "gof_redchi2_auc": 0.979,
+          "gate_auc": 0.948
+        }
+      }
+    }
+  },
+  "mean": {
+    "0.02": {
+      "spurious": 0.081,
+      "dchi2_auc": 0.002,
+      "gof_redchi2_auc": 0.576,
+      "gate_auc": 0.95,
+      "n_seeds": 3
+    },
+    "0.05": {
+      "spurious": 0.15,
+      "dchi2_auc": 0.002,
+      "gof_redchi2_auc": 0.583,
+      "gate_auc": 0.946,
+      "n_seeds": 3
+    },
+    "0.1": {
+      "spurious": 0.311,
+      "dchi2_auc": 0.002,
+      "gof_redchi2_auc": 0.671,
+      "gate_auc": 0.942,
+      "n_seeds": 3
+    },
+    "0.2": {
+      "spurious": 0.625,
+      "dchi2_auc": 0.003,
+      "gof_redchi2_auc": 0.81,
+      "gate_auc": 0.945,
+      "n_seeds": 3
+    },
+    "0.5": {
+      "spurious": 0.981,
+      "dchi2_auc": 0.011,
+      "gof_redchi2_auc": 0.987,
+      "gate_auc": 0.942,
+      "n_seeds": 3
+    }
+  }
+}

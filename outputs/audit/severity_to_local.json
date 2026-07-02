@@ -1,0 +1,39 @@
+{
+  "description": "Local blue excess implied by an additive severity-s RINJ injection on real single-MS Gaia XP templates, backing the note's ~27x number (05-note/appendix.tex App. A.1).",
+  "severity_s_additive_total_flux_fraction": 0.02,
+  "reference_local_residual": 0.02,
+  "reference_note": "Huang 2024 (ApJS 271, 13) ~2% post-correction local residual shortward of 400 nm; the injection is compared against this.",
+  "data_dir_used": "C:\\Users\\Karan\\Documents\\Python stuff\\cool papers\\wdms-xp-calibration\\data\\real_spectra_large",
+  "fell_back_to_small_dir": false,
+  "n_templates": 120,
+  "n_dropped": 0,
+  "grid_nm": [
+    392.0,
+    992.0,
+    10.0,
+    61
+  ],
+  "band_392_420_nm_pixels": [
+    392.0,
+    402.0,
+    412.0
+  ],
+  "RINJ_peak_over_mean_at_392": 4.093946650025073,
+  "statistics": {
+    "per_template_band_median_392_420_then_median_across_templates": {
+      "value": 0.5487804362198121,
+      "implied_multiplier_over_0p02_local": 27.439021810990603,
+      "as_percent": 54.878043621981206
+    },
+    "pooled_pixel_median_392_420": {
+      "value": 0.5949907015624827,
+      "implied_multiplier_over_0p02_local": 29.749535078124133,
+      "as_percent": 59.499070156248266
+    },
+    "median_edge_392": {
+      "value": 0.7754194164356609,
+      "implied_multiplier_over_0p02_local": 38.770970821783045,
+      "as_percent": 77.54194164356609
+    }
+  }
+}

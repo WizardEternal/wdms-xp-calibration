@@ -1,0 +1,93 @@
+{
+  "description": "Distance-matched FUV-detection control for the off- vs on-cooling-sequence GALEX reliability test (note UV-reliability number). Off-sequence sources are FUV-detected far less than on-sequence, and the gap SURVIVES matching the two populations in log-distance, so it is intrinsic (a lack of a hot WD), not a GALEX depth/distance effect.",
+  "matched_control": {
+    "fuvdet_off_seq": 0.18798955613577023,
+    "fuvdet_distance_matched_on_seq": 0.5744125326370757,
+    "fuvdet_on_seq_unmatched": 0.5018181818181818,
+    "raw_gap_on_minus_off": 0.3138286256824116,
+    "matched_gap_on_minus_off": 0.38642297650130547,
+    "z": 11.010207495513969,
+    "p_two_sided": 3.412169613466952e-28,
+    "n_off": 383,
+    "n_matched_on": 383,
+    "med_dist_off_pc": 433.0966531830804,
+    "med_dist_matched_on_pc": 433.1165729015452
+  },
+  "matching_procedure": {
+    "sample": "GALEX-NUV-detected sources with finite Gaia parallax (m_nuv)",
+    "on_off_split": "flag_wdmsfit_in true = on cooling sequence, false = off",
+    "distance": "dist_pc = 1000 / parallax_mas",
+    "match_metric": "nearest neighbour in log10(distance)",
+    "match_type": "greedy 1:1 without replacement (each on-seq source used once), off-seq sources matched in catalog order",
+    "detection_definition": "FUV detected = finite FUVmag from a <=3 arcsec GALEX AIS match",
+    "galex_match_radius_arcsec": 3.0
+  },
+  "distance_bins": [
+    {
+      "bin_pc": [
+        0,
+        250
+      ],
+      "n_off": 65,
+      "n_on": 1172,
+      "fuvdet_off": 0.13846153846153847,
+      "fuvdet_on": 0.44283276450511944,
+      "diff": 0.30437122604358097,
+      "skipped": false
+    },
+    {
+      "bin_pc": [
+        250,
+        350
+      ],
+      "n_off": 75,
+      "n_on": 898,
+      "fuvdet_off": 0.21333333333333335,
+      "fuvdet_on": 0.4888641425389755,
+      "diff": 0.2755308092056421,
+      "skipped": false
+    },
+    {
+      "bin_pc": [
+        350,
+        450
+      ],
+      "n_off": 68,
+      "n_on": 602,
+      "fuvdet_off": 0.22058823529411764,
+      "fuvdet_on": 0.5365448504983389,
+      "diff": 0.31595661520422125,
+      "skipped": false
+    },
+    {
+      "bin_pc": [
+        450,
+        600
+      ],
+      "n_off": 101,
+      "n_on": 456,
+      "fuvdet_off": 0.18811881188118812,
+      "fuvdet_on": 0.5789473684210527,
+      "diff": 0.39082855653986454,
+      "skipped": false
+    },
+    {
+      "bin_pc": [
+        600,
+        3000
+      ],
+      "n_off": 74,
+      "n_on": 172,
+      "fuvdet_off": 0.17567567567567569,
+      "fuvdet_on": 0.6453488372093024,
+      "diff": 0.4696731615336267,
+      "skipped": false
+    }
+  ],
+  "input_provenance": {
+    "catalog_csv": "C:\\Users\\Karan\\Documents\\Python stuff\\cool papers\\wdms-xp-calibration\\data\\wdms_gpc_30k_1229_mg7_msms.csv",
+    "catalog_note": "committed Li 2025 GPC catalog in the repo (data/, gitignored in the public repo but present locally); 30,131 rows.",
+    "galex": "vizier:II/335/galex_ais via astroquery.xmatch.XMatch, queried live at run time (3 arcsec). Not cached to disk; re-querying reproduces the match.",
+    "script_location": "wdms_salvage_internal/adv_survivor3b.py (salvage dir); this script's only persistent input is the repo catalog CSV above plus the live GALEX query, so the result is reproducible from the committed catalog + a network call."
+  }
+}

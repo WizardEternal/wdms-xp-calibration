@@ -1,0 +1,22 @@
+{
+  "description": "Magnitude and WD-flux-fraction descriptors of the Li 2025 GPC catalog (Zenodo 14569070), committed backing for note numbers in 05-note/note.tex.",
+  "catalog_csv": "data\\wdms_gpc_30k_1229_mg7_msms.csv",
+  "n_rows": 30131,
+  "n_G_finite": 30131,
+  "n_BP_finite": 30131,
+  "n_wd_frac_finite": 30131,
+  "frac_G_gt_17p5": 0.0654143573064286,
+  "frac_BP_gt_17p5": 0.48607746175035677,
+  "frac_BP_gt_18": 0.2449304702797783,
+  "wd_flux_fraction_definition": "f_WD/(f_WD+f_MS) with f ~ 10^(-0.4 M); ratio = 10^(-0.4*(abs_g_wd - abs_g_md)).",
+  "median_wd_g_flux_fraction": 0.00962496775147455,
+  "frac_wd_frac_below_0p024": 0.6393083535229498,
+  "frac_wd_frac_in_0p05_0p30": 0.1347781354750921,
+  "counts": {
+    "n_G_gt_17p5": 1971,
+    "n_BP_gt_17p5": 14646,
+    "n_BP_gt_18": 7380,
+    "n_wd_frac_below_0p024": 19263,
+    "n_wd_frac_in_0p05_0p30": 4061
+  }
+}
